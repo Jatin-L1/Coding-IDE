@@ -1,0 +1,92 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: #162447;
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    width: 60%;
+  }
+  
+  .modal-content h2 {
+    color: #00adb5;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .modal-content pre {
+    background: #1f4068;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #eeeeee;
+    overflow-x: auto;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    overflow-y: auto;
+    color: #333;
+  }
+  
+  .test-case-result {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .passed {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .failed {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .close-button {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .close-button:hover {
+    background: #0056b3;
+  }
+  

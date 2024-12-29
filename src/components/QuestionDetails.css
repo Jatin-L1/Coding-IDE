@@ -1,0 +1,27 @@
+.question-details {
+    padding: 20px;
+    width: 35%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    color: #f8f9fa;
+    overflow-y: auto;
+  }
+  
+  .question-details h2 {
+    color: #00adb5;
+    font-size: 1.5rem;
+  }
+  
+  .question-details p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 10px;
+  }
+  
+  .question-details h3 {
+    color: #eeeeee;
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  

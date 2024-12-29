@@ -1,0 +1,55 @@
+.theme-toggle-container {
+    display: flex;
+    justify-content: flex-end; /* Align the toggle to the right */
+    padding: 10px 20px; /* Add consistent padding */
+    position: relative; /* Keep the toggle button within the container */
+    z-index: 10; /* Ensure it stays above other elements */
+  }
+  
+  .theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    position: relative;
+    background: var(--text-color);
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease;
+  }
+  
+  .toggle-ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: var(--background-color);
+    border-radius: 50%;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  .toggle-ball.light {
+    transform: translateX(30px);
+  }
+  
+  .toggle-label {
+    font-size: 0.8rem;
+    color: var(--background-color);
+    margin-left: 10px; /* Ensure spacing from the toggle */
+    transition: color 0.3s ease;
+  }
+  
+  /* Responsive behavior */
+  @media screen and (max-width: 768px) {
+    .theme-toggle-container {
+      justify-content: center; /* Align toggle in the center for smaller screens */
+      padding: 10px;
+    }
+  
+    .toggle-label {
+      display: none; /* Hide label on smaller screens for compact layout */
+    }
+  }
+  

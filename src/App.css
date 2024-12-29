@@ -1,0 +1,167 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light and Dark Theme Variables */
+:root {
+  --background-color: #1e1e2f;
+  --text-color: #ffffff;
+  --card-background: #292b3a;
+  --button-background: #4caf50;
+  --button-hover: #45a049;
+}
+
+[data-theme="light"] {
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --card-background: #f5f5f5;
+  --button-background: #007bff;
+  --button-hover: #0056b3;
+}
+
+/* App Container */
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--card-background);
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Layout */
+.main-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  height: calc(100% - 50px); /* Subtract navbar height */
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Question Section */
+.question-container {
+  width: 35%; /* Set fixed width for question section */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: var(--card-background);
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  overflow-y: auto;
+}
+
+.question-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.question-description,
+.question-format {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* IDE Section */
+.ide-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card-background);
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  overflow: hidden;
+}
+
+.language-selector {
+  align-self: flex-start;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--button-background);
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.monaco-editor-container {
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Button Section */
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.run-code-button {
+  padding: 10px 20px;
+  background-color: var(--button-background);
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.run-code-button:hover {
+  background-color: var(--button-hover);
+}
+/* Adjust widths for better balance */
+.question-container {
+  width: 40%; /* Increase question section width slightly */
+}
+
+.ide-container {
+  flex: 2; /* Reduce the width slightly for the IDE section */
+}
+
+/* Center-align the Run Code button */
+.button-container {
+  display: flex;
+  justify-content: center; /* Center-aligns the button horizontally */
+  margin-top: 20px;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.next-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.next-button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
